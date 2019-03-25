@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <img ci-src="alain.jpg" ratio="1.5" /></br>
+    <img ci-src="ameen-fahmy.jpg" ratio="1.5" /></br>
+    <img ci-src="tim-patch.jpg" ratio="1.5" /></br>
+    <img ci-src="veeterzy.jpg" ratio="1.5" /></br>
+    <img ci-src="dino-reichmuth.jpg" ratio="1.5" /></br>
+    <img ci-src="inma-lesielle.jpg" ratio="1.5" f="webp-lossy-75"/></br>
+    <img ci-src="inma-lesielle.jpg" ratio="1.5"/>
+
+    <script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-responsive/lazysizes.min.js"></script>
+
+    <script src="https://cdn.scaleflex.it/filerobot/js-cloudimage-responsive/v1.0.6.min.js"></script>
+    <script>
+      const ciResponsive = new window.CIResponsive({
+        token: 'aghtandben',
+        baseUrl: "https://cloudimage.public.airstore.io/demo/",
+        presets: {
+        	xs: '(max-width: 575px)', // up to 575    PHONE
+        	sm: '(min-width: 576px)', // 576 - 767    PHABLET
+        	md: '(min-width: 768px)', // 768 - 991    TABLET
+        	lg: '(min-width: 992px)', // 992 - 1199   SMALL_LAPTOP_SCREEN
+        	xl: '(min-width: 1200px)' // from 1200    USUALSCREEN
+        },
+        filters:"q75",
+        lazyLoading: true
+      });
+  </script>
+  </body>
+</html>
